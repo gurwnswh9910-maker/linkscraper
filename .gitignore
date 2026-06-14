@@ -3,6 +3,7 @@ __pycache__/
 .venv/
 .env
 output/
+input/three_account_threads_urls_20260614.csv
 *.log
 *.tmp
 .DS_Store
