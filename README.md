@@ -48,7 +48,7 @@ Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
 
 ## 포함된 3계정 URL 입력 복원
 
-리포에는 2026-06-14 기준 3계정 URL 1,814개가 압축 텍스트로 들어 있습니다.
+리포에는 2026-06-14 기준 3계정 URL 1,814개가 압축 텍스트 조각으로 들어 있습니다.
 
 ```powershell
 python scripts\unpack_input.py
@@ -103,6 +103,6 @@ python linkscraper.py --input input\three_account_threads_urls_20260614.csv --ou
 
 - `linkscraper.py`: 링크 전용 수집 CLI
 - `requirements.txt`: PC방 설치용 최소 의존성
-- `input/three_account_threads_urls_20260614.csv.gz.b64`: 3계정 URL CSV 압축본
+- `input/three_account_threads_urls_20260614.csv.gz.b64.part*`: 3계정 URL CSV 압축 조각
 - `scripts/unpack_input.py`: 압축 입력 복원
 - `docs/PC_BANG_HANDOFF.md`: 무맥락 인수인계 절차
